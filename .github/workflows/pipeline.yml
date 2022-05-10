@@ -24,6 +24,9 @@ jobs:
               
       - name: Unit Test
         run: python -m unittest -v test
+              
+      - name: Coverage Test
+        run: coverage run -m coveragetest
         
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
